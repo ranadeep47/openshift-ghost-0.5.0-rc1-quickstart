@@ -53,10 +53,10 @@ config = {
         database: {
             client: 'pg',
             connection: {
-                host     : OPENSHIFT_POSTGRESQL_DB_HOST,
-                user     : OPENSHIFT_POSTGRESQL_DB_USERNAME,
-                password : OPENSHIFT_POSTGRESQL_DB_PASSWORD,
-                database : OPENSHIFT_APP_NAME,
+                host     : process.env.OPENSHIFT_POSTGRESQL_DB_HOST,
+                user     : process.env.OPENSHIFT_POSTGRESQL_DB_USERNAME,
+                password : process.env.OPENSHIFT_POSTGRESQL_DB_PASSWORD,
+                database : process.env.OPENSHIFT_APP_NAME,
                 charset  : 'utf8'
             },
             debug: false
