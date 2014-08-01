@@ -1,0 +1,6 @@
+<section {{bind-attr class=":js-notification typeClass"}}>
+    <span class="notification-message">
+        {{{message.message}}}
+    </span>
+    <a class="close" {{action "closeNotification"}}><span class="hidden">Close</span></a>
+</section>
