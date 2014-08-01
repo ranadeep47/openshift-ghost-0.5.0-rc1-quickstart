@@ -56,7 +56,7 @@ config = {
                 host     : OPENSHIFT_POSTGRESQL_DB_HOST,
                 user     : OPENSHIFT_POSTGRESQL_DB_USERNAME,
                 password : OPENSHIFT_POSTGRESQL_DB_PASSWORD,
-                database : OPENSHIFT_POSTGRESQL_DB_LOG_DIR,
+                database : OPENSHIFT_APP_NAME,
                 charset  : 'utf8'
             },
             debug: false
